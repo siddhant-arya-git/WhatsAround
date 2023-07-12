@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEAEA"
+    tools:context=".EmergencyActivity">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="311dp"
+        android:layout_height="563dp"
+        app:columnCount="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rowCount="8">
+
+        <ImageButton
+            android:id="@+id/hospitalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:layout_marginBottom="0sp"
+            android:background="@drawable/custom_button_rounded"
+            android:backgroundTint="#EFE3E3"
+            android:elevation="@dimen/default_gap"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:onClick="emergency"
+            android:tag="hospital"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="0"
+            app:layout_rowWeight="1"
+            app:srcCompat="@drawable/hospitalimg" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hospitals"
+            android:textAlignment="center"
+            app:layout_column="0"
+            app:layout_gravity="fill_horizontal"
+            app:layout_row="1" />
+
+        <ImageButton
+            android:id="@+id/policeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:layout_marginBottom="0sp"
+            android:background="@drawable/custom_button_rounded"
+            android:backgroundTint="#EFE3E3"
+            android:elevation="@dimen/default_gap"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:onClick="emergency"
+            android:tag="police_station"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="2"
+            app:layout_rowWeight="1"
+            app:srcCompat="@drawable/policeimg" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Police Stations"
+            android:textAlignment="center"
+            app:layout_column="0"
+            app:layout_gravity="fill_horizontal"
+            app:layout_row="3" />
+
+        <ImageButton
+            android:id="@+id/fireButton"
+            android:layout_width="wrap_content"
+            android:layout_height="103dp"
+            android:layout_margin="10sp"
+            android:layout_marginBottom="0sp"
+            android:background="@drawable/custom_button_rounded"
+            android:backgroundTint="#EFE3E3"
+            android:elevation="@dimen/default_gap"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:onClick="emergency"
+            android:tag="fire_station"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="4"
+            app:layout_rowWeight="1"
+            app:srcCompat="@drawable/fireimg" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fire Stations"
+            android:textAlignment="center"
+            app:layout_column="0"
+            app:layout_gravity="fill_horizontal"
+            app:layout_row="5" />
+
+        <ImageButton
+            android:id="@+id/pharmacyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="109dp"
+            android:layout_margin="10sp"
+            android:layout_marginBottom="0sp"
+            android:background="@drawable/custom_button_rounded"
+            android:backgroundTint="#EFE3E3"
+            android:elevation="@dimen/default_gap"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:onClick="emergency"
+            android:tag="pharmacy"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="6"
+            app:layout_rowWeight="1"
+            app:srcCompat="@drawable/pharmaimg"
+            tools:onClick="emergency" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pharmacy Stores"
+            android:textAlignment="center"
+            app:layout_column="0"
+            app:layout_gravity="fill_horizontal"
+            app:layout_row="7" />
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
