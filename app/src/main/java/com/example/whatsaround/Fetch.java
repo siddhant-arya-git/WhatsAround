@@ -87,6 +87,7 @@ public class Fetch extends AppCompatActivity {
                     @Override
                     public void onFailure(Call call, IOException e) {
                         // Something went wrong
+                        Log.i("Error","Failure!!!");
                     }
 
                     @Override
@@ -99,6 +100,7 @@ public class Fetch extends AppCompatActivity {
 
                         } else {
                             // Request not successful
+                            Log.i("Error","Issue while fetching results");
                         }
                     }
                 });
